@@ -1,0 +1,171 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TriviaGame</title>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Reset and Style sheets -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	style.css"> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript"></script>
+
+</head>
+<body>
+
+	<!--Title Area-->
+	<div class="container">
+
+		<div class="jumbotron">
+				<h1>Wild Trivia!</h1>
+		</div>
+	
+		<img src="images/chimp.jpg"
+
+		<div class="panel-body">
+			<h1>Hey, human. Show us how much you know about the wildlife with whom you share this country...you have 75 seconds to answer eight questions...Go!</h1>
+		</div>
+		
+		<!--Guess Counters-->
+		
+		<div class="panel-body">
+			Correct Guesses: <span id="winCounter">0</span>
+		</div>
+	
+	
+		<div class="panel-body">
+			Incorrect Guesses: <span id="lossCounter">0</span>
+		</div>
+			
+
+		<!--Display Counter-->
+		 <div id="display"></div>
+
+		<!--The Trivia Questions (eight in total-->
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<strong>What is the largest game bird in North America? </strong> <span id="TriviaQ1"></span>
+			</div>
+		</div>
+
+		<div class = "radio1all">	
+	    	<input type="radio" name="b1" value="Canada Goose" /> Goose <br/>
+			<input type="radio" name="b1" value="Wild Turkey" /> Turkey <br/>
+			<input type="radio" name="b1" value="Central Park Pigeon" /> Central Park Pigeon <br/>
+			<hr />
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<strong>What animal is pound-for-pound the strongest mammal in the United States? </strong> <span id="TriviaQ1"></span>
+			</div>
+		</div>	
+
+		<div class= "radio2all">
+			<input type="radio" name="b2" value="Mongoose" /> Mongoose <br/>
+			<input type="radio" name="b2" value="Platypus" /> Platypus <br/>
+			<input type="radio" name="b2" value="Wolverine" /> Wolverine <br/>
+			<hr />
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<strong>What is the wingspan of the Bald Eagle? </strong> <span id="TriviaQ1"></span>
+			</div>
+		</div>
+
+		<div class = "radio3all">	
+	    	<input type="radio" name="b3" value="5ft" /> 5 feet <br/>
+			<input type="radio" name="b3" value="10ft" /> 10 feet <br/>
+			<input type="radio" name="b3" value="7ft" /> 7 feet <br/>
+			<hr />
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<strong>"Raccoon" is a Native American word that means what? </strong> <span id="TriviaQ1"></span>
+			</div>
+		</div>	
+
+		<div class= "radio4all">
+			<input type="radio" name="b4" value="Hands" /> He who scratches with his hands <br/>
+			<input type="radio" name="b4" value="Bandit" /> He who looks like a bandit <br/>
+			<input type="radio" name="b4" value="Tail" /> He who has a striped tail <br/>
+			<hr />
+			<!--<p id="sel"></p><br />
+			input id="btnRadio" type="button" value="Get Selected Value" />-->
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<strong>What is North America's largest land animal? </strong> <span id="TriviaQ1"></span>
+			</div>
+		</div>
+
+		<div class = "radio5all">	
+	    	<input type="radio" name="b5" value="Bear" /> Grizzly Bear <br/>
+			<input type="radio" name="b5" value="Bison" /> Bison <br/>
+			<input type="radio" name="b5" value="Moose" /> Moose <br/>
+			<hr />
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<strong>The last survivor of this extinct animal died in 1914; name the animal. </strong> <span id="TriviaQ1"></span>
+			</div>
+		</div>	
+
+		<div class= "radio6all">
+			<input type="radio" name="b6" value="Ivory" /> Ivory Billed Woodpecker <br/>
+			<input type="radio" name="b6" value="Dodo" /> Dodo Bird <br/>
+			<input type="radio" name="b6" value="Pass" /> Passenger Pigeon <br/>
+			<hr />
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<strong>This common backyard dweller is related to the kangaroo. Name it: </strong> <span id="TriviaQ1"></span>
+			</div>
+		</div>
+
+		
+		<div class = "radio7all">	
+	    	<input type="radio" name="b7" value="Possum" /> Opossum <br/>
+			<input type="radio" name="b7" value="Skunk" /> Skunk <br/>
+			<input type="radio" name="b7" value="Chuck" /> Woodchuck <br/>
+			<hr />
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<strong>Below is the home range of which rattlesnake?
+		</div>	
+
+		<div class= "radio8all">
+			<input type="radio" name="b8" value="Timber" /> Timber <br/>
+			<input type="radio" name="b8" value="Green" /> Mojave Green <br/>
+			<input type="radio" name="b8" value="Diam" /> Eastern Diamondback <br/>
+			<br/>
+			<img src="images/dback_range.gif"
+			<hr />
+		</div>
+		</body>
+		</html>
+				
+
+		<footer>
+		<div class="panel panel-default"></div>
+			<div class="container"></div>
+				&copy; Copyright 2016 All Rights Reserved
+			</div>
+		</footer>
+		
+		<script src="javascript/app.js"></script>
+
+		</div>
+
+	</div>
+</body>
+</html>
+

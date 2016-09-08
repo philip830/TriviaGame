@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Selected Radio Button (from DevCurry.com)</title>
+<script src="http://code.jquery.com/jquery-latest.js"   
+        type="text/javascript"></script>
+    
+   <script type="text/javascript">
+    $(function () {
+     $('#btnRadio').click(function () {
+          var checkedradio = $('[name="gr"]:radio:checked').val();
+          //$("#sel").html("Selected Value: " + checkedradio);
+         if (checkedradio == "Milk") {
+          	console.log("Milk")
+          }
+          else {
+          console.log("spoiled")
+          }
+      });
+    });
+</script>
+</head>
+<body>
+<div>
+<input type="radio" name="gr" value="Milk" /> Milk <br />
+<input type="radio" name="gr" value="Butter"
+    checked="checked" /> Butter <br />
+<input type="radio" name="gr" value="Cheese" /> Ch <br />
+<hr />
+<p id="sel"></p><br />
+<input id="btnRadio" type="button" value="Get Selected Value" />
+</div>
+</body>
+</html>
